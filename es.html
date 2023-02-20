@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CootsGPT</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="es.html">CootsGPT</a></h1>
+        <nav>
+            <a href="index.html">English</a>
+        </nav>
+        <div class="firma">
+            <p>Made by <a href="https://bensmithperez.com">@bensmithperez</a></p>
+            <a href="https://www.youtube.com/channel/UCTMEgf6VREfyWOuRfu0xWlg?sub_confirmation=1">Suscribete a mi
+                canal!</a>
+        </div>
+    </header>
+    <main>
+        <div class="historial-del-chat" id="historial-del-chat">
+            <p class="acerca-de" id="acerca-de">¡Hola chat!<br>Yo sé que esto no cuenta como un juego, pero capáz les
+                gusta. 🤷‍♂️<br>El sitio es super simple, pueden ver el código acá! 😁<br><br>Esto no tiene nada de GPT,
+                solo escribís lo que quieras y te responde "miau" una cantidad aleatoria de veces y muestra un tweet de
+                la cuenta de Coots.<br>
+                ¡Probalo! (también dice "meow" si lo ponés en inglés)<br><br><a class="link-de-la-descripcion"
+                    href="https://www.youtube.com/channel/UCTMEgf6VREfyWOuRfu0xWlg?sub_confirmation=1">Suscribanse a mi
+                    canal, no sean malos.</a><br>👉👈</p>
+        </div>
+
+        <div class="chatbox">
+            <input type="text" name="chatbox-input" id="chatbox-input" class="chatbox-input">
+            <button id="boton-submit" class="boton-submit">></button>
+        </div>
+    </main>
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+        var miauDeCoots = "miau";
+        var mensajeFinalDeCoots = "Bueno, acá te dejo uno de mis tweets:";
+    </script>
+    <script src="tweets.js"></script>
+    <script src="coots.js"></script>
+</body>
+
+</html>

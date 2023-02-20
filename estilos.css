@@ -1,0 +1,198 @@
+/* hacemos un reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+header {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: #202123;
+    color: white;
+    width: 300px;
+    height: 100%;
+}
+
+header>h1>a {
+    color: white;
+    text-decoration: none;
+}
+
+div.firma {
+    margin-top: auto;
+}
+
+.firma a {
+    color: white;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1em 0;
+}
+
+nav a {
+    color: #979797;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+/* historial del chat es donde aparecen los mensajes */
+.historial-del-chat {
+    width: 100%;
+    height: 90%;
+    background-color: #343541;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: scroll;
+}
+
+.historial-del-chat>p {
+    width: 100%;
+    padding: 10px 10px 50px 40px;
+    margin: 0;
+}
+
+/* todo lo que tenga que ver con el estilo de los mensajes */
+.mensaje {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    color: white;
+}
+
+.tweet-mensaje-coots {
+    width: 100%;
+    padding: 0 0 0 2em;
+    color: white;
+}
+
+.texto-mensaje {
+    padding-left: 1em;
+}
+
+.mensaje-usuario {
+    background-color: #343541;
+}
+
+.mensaje-coots {
+    background-color: #444654;
+}
+
+.tweet-mensaje-coots {
+    background-color: #444654;
+}
+
+.tweet-mensaje-coots.oculto {
+    display: none;
+}
+
+.containerTweetDeCoots {
+    max-width: 200px;
+}
+
+#tweet {
+    width: 400px !important;
+}
+
+#tweet iframe {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.imagen {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: .2em;
+    background-position: center;
+    min-width: 30px;
+}
+
+.imagen-coots {
+    background-image: url("./imagenes/coots.png");
+}
+
+.imagen-usuario {
+    background-color: #547a9d;
+}
+
+/* el chatbox... */
+.chatbox {
+    width: 100%;
+    height: 10%;
+    background-color: #343540;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbox-input {
+    padding: 1em;
+    background-color: #40414f;
+    border: none;
+    border-radius: .2em;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+}
+
+.chatbox-input:focus {
+    outline: none;
+    cursor: white;
+}
+
+.boton-submit {
+    position: relative;
+    left: -20px;
+}
+
+/* este texto solo va a aparecer cuando se entra a la página,
+luego cuando escribis un mensaje, desaparece */
+.acerca-de {
+    color: white;
+    display: flex;
+    text-align: center;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.acerca-de.oculto {
+    display: none;
+}
+
+a.link-de-la-descripcion {
+    display: contents;
+    color: #df00ff;
+    font-weight: bold;
+}

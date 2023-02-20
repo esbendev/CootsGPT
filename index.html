@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CootsGPT</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">CootsGPT</a></h1>
+        <nav>
+            <a href="es.html">Español</a>
+        </nav>
+        <div class="firma">
+            <p>Made by <a href="https://bensmithperez.com/en">@bensmithperez</a></p>
+            <a href="https://www.youtube.com/channel/UCTMEgf6VREfyWOuRfu0xWlg?sub_confirmation=1">Sub to my
+                channel!!</a>
+        </div>
+    </header>
+    <main>
+        <div class="historial-del-chat" id="historial-del-chat">
+            <p class="acerca-de" id="acerca-de">Hi chat!<br>I know this doesn't qualify as a game, but thought you'd
+                apreciate it.
+                🤷‍♂️<br>It's a super simple site, check out the code here! 😁<br><br>This is not any GPT based thing,
+                you just enter whatever into the chatbox and it returns a random amount of "meow"s and a tweet from
+                coots account.<br>Try it out! (Also
+                "miau" if you try the spanish version)<br><br><a class="link-de-la-descripcion"
+                    href="https://www.youtube.com/channel/UCTMEgf6VREfyWOuRfu0xWlg?sub_confirmation=1">Maybe sub to my
+                    youtube?</a><br>👉👈</p>
+        </div>
+
+        <div class="chatbox">
+            <input type="text" name="chatbox-input" id="chatbox-input" class="chatbox-input">
+            <button id="boton-submit" class="boton-submit">></button>
+        </div>
+    </main>
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+        var miauDeCoots = "meow";
+        var mensajeFinalDeCoots = "Anyways, here's one of my tweets:";
+    </script>
+    <script src="tweets.js"></script>
+    <script src="coots.js"></script>
+</body>
+
+</html>
