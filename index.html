@@ -22,7 +22,19 @@
 </head>
 
 <body>
-    <header>
+    <button id="boton-menu-movil" class="botton-menu-movil" onclick="toggleMenu()">show menu</button>
+    <script>
+        function toggleMenu() {
+            document.getElementById("boton-menu-movil").classList.toggle("menu-abierto");
+            document.getElementById("header").classList.toggle("menu-abierto");
+            if (document.getElementById("boton-menu-movil").classList.contains("menu-abierto")){
+                document.getElementById("boton-menu-movil").textContent = "hide menu";
+            } else {
+                document.getElementById("boton-menu-movil").textContent = "show menu";
+            }
+        }
+    </script>
+    <header id="header">
         <h1><a href="index.html">CootsGPT</a></h1>
         <nav>
             <a href="es.html">Español</a>

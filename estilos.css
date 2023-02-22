@@ -20,6 +20,7 @@ h1 {
 }
 
 header {
+    position: absolute;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -27,11 +28,27 @@ header {
     color: white;
     width: 300px;
     height: 100%;
+    transform: translateX(-300px);
+}
+
+header.menu-abierto {
+    transform: translateX(0px);
 }
 
 header>h1>a {
     color: white;
     text-decoration: none;
+}
+
+.botton-menu-movil{
+    position: absolute;
+    margin: 1em;
+    z-index: 999;
+}
+
+.botton-menu-movil.menu-abierto{
+    position: absolute;
+    margin: 1em;
 }
 
 div.firma {
@@ -76,7 +93,7 @@ main {
 
 .historial-del-chat>p {
     width: 100%;
-    padding: 10px 10px 50px 40px;
+    /* padding: 10px 10px 50px 40px; */
     margin: 0;
 }
 
@@ -195,4 +212,19 @@ a.link-de-la-descripcion {
     display: contents;
     color: #df00ff;
     font-weight: bold;
+}
+
+@media (min-width: 800px){
+    header {
+        position: initial;
+        transform: unset;
+    }
+
+    .historial-del-chat>p {
+        padding: 10px 100px;
+    }
+
+    .botton-menu-movil{
+        display: none;
+    }
 }
