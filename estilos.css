@@ -204,6 +204,11 @@ luego cuando escribis un mensaje, desaparece */
     align-items: center;
 }
 
+.acerca-de>a{
+    display: contents;
+    color: #eb98e4;
+}
+
 .acerca-de.oculto {
     display: none;
 }
